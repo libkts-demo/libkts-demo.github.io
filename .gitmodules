@@ -1,0 +1,4 @@
+[submodule "LibKTS"]
+	path = LibKTS
+	url = https://github.com/Treeston/LibKTS.git
+	branch = main

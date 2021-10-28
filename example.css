@@ -1,0 +1,36 @@
+html
+{
+    overflow: hidden;
+    width: 100%; height: 100%;
+    background: #aaa;
+    margin: 0; padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+body
+{
+    flex-grow: 1; margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body:not(.noscript) #noscript { display: none; }
+.noscript > :not(#noscript) { display: none; }
+
+#input, #output, #noscript { background: #ccc; padding: 10px; }
+#output { flex-grow: 1; margin-top: 10px; overflow-y: auto; }
+#input { flex-grow: 0; align-self: flex-start; }
+#output { font-family: Verdana, sans-serif; }
+
+#name { font-size: 140%; font-weight: bold; }
+#info { font-size: 70%; font-style: italic; margin-bottom: 1em; }
+
+#players { border: 2px outset #000; border-collapse: separate; }
+#players:empty { display: none; }
+#players td, #players th { border: 1px inset #000; padding: 3px; }
+#players th { font-weight: bold; }
+#players tr.dropped td { color: #777; text-decoration: line-through; }
+
+#config { display: none; }

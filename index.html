@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        
+        <title>LibKTS demonstrator page</title>
+
+        <link rel="stylesheet" href="example.css" />
+        <script defer src="LibKTS/LibKTS.js"></script>
+        <script defer src="example.js"></script>
+    </head>
+    
+    <body class="noscript">
+        <script type="text/javascript">document.body.classList.remove('noscript');</script>
+        <div id="noscript">Please whitelist <b>libkts-demo.github.io</b> in NoScript. <i>(If you'd like, view the page source <a href="https://github.com/libkts-demo/libkts-demo.github.io" target="_blank">here</a>, first.)</i></div>
+        <div id="input">
+            <button id="load-box" type="button">Open tournament file</button>
+            <div id="config"><button id="submit" type="button">Apply</button></div>
+        </div>
+        <div id="output">
+            <div id="name"></div>
+            <div id="info"></div>
+            <table id="players"></table>
+        </div>
+    </body>
+</html>
